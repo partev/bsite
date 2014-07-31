@@ -48,9 +48,13 @@ bpython supports Python 3. It's as simple as running setup.py with Python 3.
 
 Configuration
 -------------
-See the sample.ini file for a list of available options. You should save your ini file as ``$XDG_CONFIG_HOME/bpython/config`` [#f1]_ or specify at the command line:
+See the sample-config file for a list of available options. You should save your
+ini file as ``$XDG_CONFIG_HOME/bpython/config`` [#f1]_ or specify at the command
+line:
 
-`bpython --config=/path/to/a/bpython/config/file`
+.. code-block:: shell
+
+  bpython --config=/path/to/a/bpython/config/file
 
 Artwork
 -------

@@ -13,23 +13,34 @@ bpython has the following dependencies:
 
 Release tarball
 ===============
-The latest release for bpython is 0.13.1 and you can download it on our 
+The latest release for bpython is 0.13.1 and you can download it on our
 `release page`_. You can find older releases here.
 
 Git repository
 ==============
 The development version is available with git; use the following command:
 
-`git clone https://github.com/bpython/bpython/`
+.. code-block:: shell
 
-If you get stuck, join #bpython on irc.freenode.net or send an email to the 
+  git clone https://github.com/bpython/bpython/
+
+If you get stuck, join #bpython on irc.freenode.net or send an email to the
 mailing list (more info).
 
 easy_install/pip
 ================
-If you have easy_install or pip on your system (and you probably have) you can install bpython through PyPi.
+If you have ``easy_install`` or ``pip`` on your system (and you probably have)
+you can install bpython through PyPi.
 
-`easy_install bpython` or `pip install bpython`
+.. code-block:: shell
+
+  easy_install bpython
+
+or
+
+.. code-block:: shell
+
+  pip install bpython
 
 Packages
 ========
@@ -37,7 +48,12 @@ Packages
 
 Debian
 ------
-David Paleino maintains the bpython package, it is included in the sid and squeeze repositories.
+David Paleino maintains the bpython package. The package is included since
+the release of squeeze. You can install it with:
+
+.. code-block:: shell
+
+  apt-get install bpython
 
 Fedora
 ------
@@ -45,7 +61,12 @@ Terje Rosten has informed me that bpython is now in fedora, so "yum install bpyt
 
 Ubuntu
 ------
-bpython is included in the ubuntu repositories starting at Ubuntu 9.10 karmic koala.
+The bpython package is included in the Ubuntu repositories starting at Ubuntu
+9.10 Karmic Koala.You can install it with:
+
+.. code-block:: shell
+
+  apt-get install bpython
 
 OpenSUSE
 --------
