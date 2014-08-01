@@ -10,6 +10,12 @@ using your system's package manager.
 bpython has the following dependencies:
 
 * Pygments
+* Sphinx != 1.1.2 (for the documentation only)
+* mock (for the testsuite only)
+* babel (optional, for internationalization)
+* curtsies >= 0.1.0 (for bpython-curtsies only)
+* greenlet (for bpython-curtsies only)
+* urwid (for bpython-urwid only)
 
 Release tarball
 ===============
