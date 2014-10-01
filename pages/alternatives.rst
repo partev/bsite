@@ -10,6 +10,8 @@ If you know of any others please let us know. And if you're the author of any of
 
   * DreamPie_
   * IPython_
+  * `Python Prompt Toolkit`_
 
 .. _IPython: http://python.scipy.com/moin/
 .. _DreamPie: http://dreampie.sourceforge.net/
+.. _Python Prompt Toolkit: https://github.com/jonathanslenders/python-prompt-toolkit
