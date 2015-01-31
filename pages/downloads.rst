@@ -89,17 +89,11 @@ The bpython package is included in the Ubuntu repositories starting at Ubuntu
 
 OpenSUSE
 --------
-This is an old version, please consider installing from tarball.
+Packages for OpenSUSE can be found at
 
-Pascal Bleser has been kind enough to provide a package for OpenSUSE, which can
-be found here:
+https://software.opensuse.org/download.html?project=devel:languages:python&package=bpython
 
-http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_10.3/x86_64/bpython-0.2.3-1.1.x86_64.rpm
-
-Apparently you can also add this repo:
-
-http://download.opensuse.org/repositories/devel:/languages:/python/
-to your package manager, if someone would like to submit the exact instructions for that, feel free.
+Please follow the instructions there to install bpython with `zypper`.
 
 Solaris
 -------
