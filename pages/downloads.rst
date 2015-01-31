@@ -4,7 +4,7 @@ Downloads
 :sort: 1
 :save-as: downloads.html
 
-You can get bpython by downloading the latest release, cloning the git repo or 
+You can get bpython by downloading the latest release, cloning the git repo or
 using your system's package manager.
 
 bpython has the following dependencies:
@@ -19,7 +19,7 @@ bpython has the following dependencies:
 
 Release tarball
 ===============
-The latest release for bpython is 0.13.1 and you can download it on our
+The latest release for bpython is 0.13.2 and you can download it on our
 `release page`_. You can find older releases here.
 
 Git repository
@@ -50,7 +50,8 @@ or
 
 Packages
 ========
-(Note that packages may be out of date so please try at least the latest release if you have any problems before reporting bugs).
+(Note that packages may be out of date so please try at least the latest release
+if you have any problems before reporting bugs).
 
 Debian
 ------
