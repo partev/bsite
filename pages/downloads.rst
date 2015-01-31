@@ -75,7 +75,7 @@ the release of squeeze. You can install it with:
 
 Fedora
 ------
-Terje Rosten has informed me that bpython is now in fedora, so "yum install
+Terje Rosten has informed me that bpython is now in Fedora, so "yum install
 bpython" should be all you need.
 
 Ubuntu
