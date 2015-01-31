@@ -10,12 +10,23 @@ using your system's package manager.
 bpython has the following dependencies:
 
 * Pygments
+* requests
 * Sphinx != 1.1.2 (for the documentation only)
 * mock (for the testsuite only)
 * babel (optional, for internationalization)
 * curtsies >= 0.1.0 (for bpython-curtsies only)
 * greenlet (for bpython-curtsies only)
 * urwid (for bpython-urwid only)
+
+If you are using Python 2 on Mac OS X, the following dependencies are required
+as well:
+
+* pyOpenSSL
+* ndg-httpsclient
+* pyasn1
+
+If you have problems installing ``cffi`` which is needed by ``pyOpenSSL``,
+please take a look at ``cffi``'s `documentation`_.
 
 Release tarball
 ===============
@@ -64,7 +75,8 @@ the release of squeeze. You can install it with:
 
 Fedora
 ------
-Terje Rosten has informed me that bpython is now in fedora, so "yum install bpython" should be all you need.
+Terje Rosten has informed me that bpython is now in fedora, so "yum install
+bpython" should be all you need.
 
 Ubuntu
 ------
@@ -79,7 +91,8 @@ OpenSUSE
 --------
 This is an old version, please consider installing from tarball.
 
-Pascal Bleser has been kind enough to provide a package for OpenSUSE, which can be found here:
+Pascal Bleser has been kind enough to provide a package for OpenSUSE, which can
+be found here:
 
 http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_10.3/x86_64/bpython-0.2.3-1.1.x86_64.rpm
 
@@ -90,6 +103,8 @@ to your package manager, if someone would like to submit the exact instructions 
 
 Solaris
 -------
-You can find bpython packages for Solaris on the sunfreeware website, kindly provided for by Steven Christensen.
+You can find bpython packages for Solaris on the sunfreeware website, kindly
+provided for by Steven Christensen.
 
+.. _documentation: https://cffi.readthedocs.org/en/release-0.8/#macos-x
 .. _release page: /releases/
