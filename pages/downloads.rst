@@ -14,8 +14,8 @@ bpython has the following dependencies:
 * ``Sphinx`` != 1.1.2 (for the documentation only)
 * ``mock`` (for the testsuite only)
 * ``babel`` (optional, for internationalization)
-* ``curtsies`` >= 0.1.0,< 0.2 (for bpython-curtsies only)
-* ``greenlet`` (for bpython-curtsies only)
+* ``curtsies`` >= 0.1.18,< 0.2
+* ``greenlet``
 * ``urwid`` (for bpython-urwid only)
 
 If you are using Python 2 on Mac OS X, the following dependencies are required
