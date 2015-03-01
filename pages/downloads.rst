@@ -18,12 +18,10 @@ bpython has the following dependencies:
 * ``greenlet``
 * ``urwid`` (for bpython-urwid only)
 
-If you are using Python 2 on Mac OS X, the following dependencies are required
-as well:
+If you are using Python 2 before 2.7.7, the following dependency is also
+required:
 
-* ``pyOpenSSL``
-* ``ndg-httpsclient``
-* ``pyasn1``
+* ``requests[security]``
 
 If you have problems installing ``cffi`` which is needed by ``pyOpenSSL``,
 please take a look at ``cffi``'s `documentation`_.
