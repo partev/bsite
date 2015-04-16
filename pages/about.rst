@@ -36,7 +36,7 @@ I didn't call this "Undo" because I thought that would be misleading, but "Rewin
 
 Pastebin code/write to file.
 ----------------------------
-I don't really use the save thing much, but the pastebin thing's great. Hit a key and what you see on the screen will be sent to a pastebin and a URL is returned for you to do what you like with. I've hardcoded rafb.net/paste in for now, that needs to be fixed so it's configurable. Next release, I promise.
+I don't really use the save thing much, but the pastebin thing's great. Hit a key and what you see on the screen will be sent to a pastebin and a URL is returned for you to do what you like with. bpaste.net is used by default, but you can configure bpython to use a different pastebin.
 
 Flush curses screen to stdout.
 ------------------------------
