@@ -47,5 +47,13 @@ There are two possible fixes for this issue:
 * Make sure that `pyOpenSSL`, `pyasn1`, and `ndg-httpsclient` are installed.
 
 
+Building `cffi` fails to build on Mac OS X
+==========================================
+
+If you have problems installing `cffi` which is needed by `pyOpenSSL`,
+please take a look at `cffi`'s documentation_.
+
+
 .. _issue: https://github.com/bpython/bpython/issues
 .. _494: https://github.com/bpython/bpython/issues/494
+.. _documentation: https://cffi.readthedocs.org/en/release-0.8/#macos-x
