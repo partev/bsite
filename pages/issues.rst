@@ -6,6 +6,7 @@ Known issues and FAQ
 
 For a list of unfixed issues, please check our issue_ tracker.
 
+
 No module named `configparser`
 ==============================
 
@@ -34,6 +35,16 @@ the following entry in `~/.bashrc` fixes the issue:
 .. code-block:: shell
 
   export PYTHONPATH=/Library/Python/2.7/site-packages/:$PYTHONPATH
+
+
+Upload failed: hostname 'bpaste.net' doesn't match either of '*.qabana.nl', 'qabana.nl'
+=======================================================================================
+
+This issues is caused by missing SNI support in Python respectively `requests`.
+There are two possible fixes for this issue:
+
+* Upgrade to Python 2.7.7 or newer.
+* Make sure that `pyOpenSSL`, `pyasn1`, and `ndg-httpsclient` are installed.
 
 
 .. _issue: https://github.com/bpython/bpython/issues
