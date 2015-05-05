@@ -37,8 +37,8 @@ the following entry in `~/.bashrc` fixes the issue:
   export PYTHONPATH=/Library/Python/2.7/site-packages/:$PYTHONPATH
 
 
-Upload failed: hostname 'bpaste.net' doesn't match either of '*.qabana.nl', 'qabana.nl'
-=======================================================================================
+Upload failed: hostname 'bpaste.net' doesn't match either of '\*.qabana.nl', 'qabana.nl'
+========================================================================================
 
 This issues is caused by missing SNI support in Python respectively `requests`.
 There are two possible fixes for this issue:
@@ -48,4 +48,4 @@ There are two possible fixes for this issue:
 
 
 .. _issue: https://github.com/bpython/bpython/issues
-.. _issue: https://github.com/bpython/bpython/issues/494
+.. _494: https://github.com/bpython/bpython/issues/494
