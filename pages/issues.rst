@@ -54,6 +54,13 @@ If you have problems installing `cffi` which is needed by `pyOpenSSL`,
 please take a look at `cffi`'s documentation_.
 
 
+<F1> does not work in GNOME terminal
+====================================
+
+By default GNOME terminal does not forward <F1> to the application. This can be
+fixed by `removing <gnometerminal>`_ the <F1> key binding in GNOME terminal.
+
 .. _issue: https://github.com/bpython/bpython/issues
 .. _494: https://github.com/bpython/bpython/issues/494
 .. _documentation: https://cffi.readthedocs.org/en/release-0.8/#macos-x
+.. _gnometerminal: http://askubuntu.com/questions/37313/how-do-i-deactivate-f1-and-f10-keybindings-in-gnome-terminal
