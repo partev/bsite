@@ -46,6 +46,32 @@ There are two possible fixes for this issue:
 * Upgrade to Python 2.7.7 or newer.
 * Make sure that `pyOpenSSL`, `pyasn1`, and `ndg-httpsclient` are installed.
 
+pkg_resources.DistributionNotFound: ndg-httpsclient
+===================================================
+
+If launching `bpython` fails with
+
+.. code-block:: pytb
+
+    Traceback (most recent call last):
+      File "/tmp/bpython-26/bin/bpython", line 5, in <module>
+        from pkg_resources import load_entry_point
+      File "/tmp/bpython-26/lib/python2.6/site-packages/pkg_resources.py", line 2829, in <module>
+        working_set = WorkingSet._build_master()
+      File "/tmp/bpython-26/lib/python2.6/site-packages/pkg_resources.py", line 449, in _build_master
+        ws.require(__requires__)
+      File "/tmp/bpython-26/lib/python2.6/site-packages/pkg_resources.py", line 742, in require
+        needed = self.resolve(parse_requirements(requirements))
+      File "/tmp/bpython-26/lib/python2.6/site-packages/pkg_resources.py", line 639, in resolve
+        raise DistributionNotFound(req)
+    pkg_resources.DistributionNotFound: ndg-httpsclient
+
+after a successful install, something went wrong during the installation of the
+dependencies (i.e. they were not correctly resolved). Installing the
+`pyOpenSSL`, `pyasn1` and `ndg-httpsclient` manually should resolve this issue.
+
+This issue has been observed with old Python (2.6.X) and pip versions and it
+should not be present in newer versions.
 
 Building `cffi` fails to build on Mac OS X
 ==========================================
