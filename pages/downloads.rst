@@ -28,7 +28,7 @@ please take a look at ``cffi``'s `documentation`_.
 
 Release tarball
 ===============
-The latest release for bpython is **0.14.2** and you can download it on our
+The latest release for bpython is **0.15** and you can download it on our
 `release page`_. You can find older releases here.
 
 Git repository
