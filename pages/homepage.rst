@@ -20,11 +20,11 @@ the following (special) features:
 
 For more, see our about_-page or just skip right to the screenshots_.
 
-A special thanks to `Hacker School`_ who decided to devote a team of young
+A special thanks to the `Recurse Center`_ who decided to devote a team of young
 developers to work on bpython as part of their training programme. They're based
 in New York City and have a great attitude towards the development of both male
 and female programmers - take a look.
 
-.. _Hacker School: https://www.hackerschool.com/
+.. _Recurse Center: https://www.recurse.com/
 .. _about: /about
 .. _screenshots: /screenshots
