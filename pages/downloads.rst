@@ -14,7 +14,7 @@ bpython has the following dependencies:
 * ``Sphinx`` != 1.1.2 (for the documentation only)
 * ``mock`` (for the testsuite only)
 * ``babel`` (optional, for internationalization)
-* ``curtsies`` >= 0.1.18,< 0.2
+* ``curtsies`` >= 0.1.18
 * ``greenlet``
 * ``urwid`` (for bpython-urwid only)
 
