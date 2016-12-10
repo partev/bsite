@@ -26,5 +26,5 @@ in New York City and have a great attitude towards the development of both male
 and female programmers - take a look.
 
 .. _Recurse Center: https://www.recurse.com/
-.. _about: /about
-.. _screenshots: /screenshots
+.. _about: /about.html
+.. _screenshots: /screenshots.html
