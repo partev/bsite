@@ -2,7 +2,7 @@ Known issues and FAQ
 ####################
 
 :sort: 8
-:save-as: issues.rst
+:save-as: issues.html
 
 For a list of unfixed issues, please check our issue_ tracker.
 

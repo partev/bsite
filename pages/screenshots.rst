@@ -2,7 +2,7 @@ Screenshots
 ###########
 
 :sort: 2
-:save-as: /screenshots.html
+:save-as: screenshots.html
 
 Videos
 ======
