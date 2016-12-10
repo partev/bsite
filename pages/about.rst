@@ -64,4 +64,4 @@ Our logo and colors have been masterfully created by Leo Hutson.
 
 .. [#f1] ``$XDG_CONFIG_HOME`` defaults to ``~/.config`` if not set.
 
-.. _mailing list: /community
+.. _mailing list: /community.html
