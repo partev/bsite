@@ -100,3 +100,11 @@ provided for by Steven Christensen.
 
 .. _documentation: https://cffi.readthedocs.org/en/release-0.8/#macos-x
 .. _release page: /releases/
+
+OpenBSD
+-------
+A bpython package is available in the OpenBSD repositories. You can install it with:
+
+.. code-block:: shell
+
+  pkg_add bpython
