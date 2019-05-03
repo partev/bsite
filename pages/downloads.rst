@@ -42,20 +42,21 @@ The development version is available with git; use the following command:
 If you get stuck, join #bpython on irc.freenode.net or send an email to the
 mailing list (more info).
 
-easy_install/pip
+pip/easy_install
 ================
-If you have ``easy_install`` or ``pip`` on your system (and you probably have)
+If you have ``pip`` on your system (and you probably have)
 you can install bpython through PyPi.
+
+.. code-block:: shell
+
+  pip install bpython
+
+In case of you don't have ``pip``, you could use deprecated ``easy_install`` command:
 
 .. code-block:: shell
 
   easy_install bpython
 
-or
-
-.. code-block:: shell
-
-  pip install bpython
 
 Packages
 ========
