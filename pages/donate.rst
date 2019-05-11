@@ -4,48 +4,25 @@ Donate?
 :sort: 9
 :save-as: donate.html
 
-Hello!!
+Hello and thank you for taking the time to look at this page.
 
-Today, about a year and nine months after the first commit I pushed to the 
-bpython repository, I received a donation for $5 - the second donation I've 
-received. So that's a total of $15. We estimate that we have at least 5 000 users, 
-with an average of 40 or so downloads a day this month alone, and that's before 
-the new release we just pushed today!
+Historically this page contained a bit of text asking people to send me some
+donations to show me how much they appreciate the hard work that has been put
+into bpython.
 
-I'm pretty sure that the other 4998 or so users who haven't donated aren't all 
-bad people, just that it never really occured to them to donate. So that's why 
-I'm writing this; to hopefully give the rest of the users a bit of perspective 
-and realise how much difference it can make to me as an open source developer 
-when somebody takes the time to donate a few dollars. You'll be one in a small 
-handful and your donation will most certainly be noticed.
+Having discussed with the bpython team, we decided that (for various reasons,
+not least of all because I haven't written any bpython code in years ...) it
+would make a lot more sense to encourage people to give their hard-earned cash
+to a worthwhile cause.
 
-Whether people donate or not, myself and the other bpython developers are still
-going to carry on working on the project; probably just the same as we would if
-we got several donations a month, so this isn't some kind of threat - we like 
-bpython and we use it every day, so we want it to be a good tool, and we're not
-greedy enough to keep that to ourselves just to make a few bucks.
+These days I can afford to buy my own coffee so, instead of buying one for me,
+please think of somebody who might really need that money and send it their way
+instead.
 
-To put this in perspective a little, to say thank you to the two guys who have 
-contributed significant amounts of code to bpython and to the bpython website 
-(Andreas Stuehrk and Simon de Vlieger), I bought them both an Amazon gift 
-voucher for Christmas, the sum total of which came to a lot more than I have 
-received in donations - it seems kind of ironic really, but I'm grateful for 
-the work they've put in, so I got them a small gift as a token of my 
-appreciation. As a business, we're certainly not even close to breaking 
-even. ;-)
+If you can't think of anybody who might benefit from a bit of extra cash, I
+would like to recommend the `Perseid School <https://www.perseid.merton.sch.uk/>`
+(donation page `here <https://uk.virginmoneygiving.com/charity-web/charity/finalCharityHomepage.action?uniqueVmgCharityUrl=FriendsOfPerseidSchoolMorden>`).
 
-So I'm not begging you to give me money and I'm not going to threaten to stop 
-working on the project if you don't donate, I'm just saying that if you do 
-donate, you can be certain that I will be very grateful. See it as buying me a 
-beer in the pub. Chances are that's what I'll spend it on anyway. :-) If you 
-can't afford to donate or simply don't see the point, don't worry about it - I 
-hope you get as much use out of bpython as I do. I'd be very glad to hear from 
-you if you do have something positive to say!
-
-Thanks for taking the time to read this and a very big thank you to everybody 
-who has taken the time to donate or send me a thank-you email in the past, and 
-even to those who didn't find the time: you're all very welcome!
-
-All the best,
+I would also encourage the bpython team to add any other charities that they would like to raise awareness for.
 
 Bob Farrell <bob at bpython-interpreter dot org>
