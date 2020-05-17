@@ -8,7 +8,7 @@ SITEURL = ''
 
 RELATIVE_URLS = True
 
-PATH = '.'
+PATH = 'content/'
 STATIC_PATHS = ['images', 'videos']
 DELETE_OUTPUT_DIRECTORY = True
 
