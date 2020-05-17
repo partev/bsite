@@ -10,7 +10,6 @@ RELATIVE_URLS = True
 
 PATH = 'content/'
 STATIC_PATHS = ['images', 'videos']
-DELETE_OUTPUT_DIRECTORY = True
 
 TIMEZONE = 'Europe/Paris'
 
