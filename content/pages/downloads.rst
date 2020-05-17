@@ -4,27 +4,15 @@ Downloads
 :sort: 1
 :save-as: downloads.html
 
-You can get bpython by downloading the latest release, cloning the git repo or
-using your system's package manager.
+The easiest way to get bpython is by installing it with pip, preferably in your
+virtual environment.
 
-bpython has the following dependencies:
+.. code-block:: shell
 
-* ``Pygments``
-* ``requests``
-* ``Sphinx`` != 1.1.2 (for the documentation only)
-* ``mock`` (for the testsuite only)
-* ``babel`` (optional, for internationalization)
-* ``curtsies`` >= 0.1.18
-* ``greenlet``
-* ``urwid`` (for bpython-urwid only)
+  pip install bpython
 
-If you are using Python 2 before 2.7.7, the following dependency is also
-required:
-
-* ``requests[security]``
-
-If you have problems installing ``cffi`` which is needed by ``pyOpenSSL``,
-please take a look at ``cffi``'s `documentation`_.
+There are several other ways of installing or getting the source to bpython as
+well.
 
 Release tarball
 ===============
@@ -41,22 +29,6 @@ The development version is available with git; use the following command:
 
 If you get stuck, join #bpython on irc.freenode.net or send an email to the
 mailing list (more info).
-
-pip/easy_install
-================
-If you have ``pip`` on your system (and you probably have)
-you can install bpython through PyPi.
-
-.. code-block:: shell
-
-  pip install bpython
-
-In case of you don't have ``pip``, you could use deprecated ``easy_install`` command:
-
-.. code-block:: shell
-
-  easy_install bpython
-
 
 Packages
 ========

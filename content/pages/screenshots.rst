@@ -1,7 +1,7 @@
 Screenshots
 ###########
 
-:sort: 2
+:sort: 1
 :save-as: screenshots.html
 
 Screenshots
@@ -9,6 +9,7 @@ Screenshots
 
 .. image:: /images/full-demo.gif
     :alt: full-demo gif
+
 .. image:: /images/class.gif
     :alt: class gif
 .. image:: /images/math.gif

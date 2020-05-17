@@ -1,7 +1,7 @@
 About
 #####
 
-:sort: 1
+:sort: 2 
 :save-as: about.html
 
 Introduction
