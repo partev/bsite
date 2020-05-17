@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'bpython team'
-SITENAME = u'the bpython interpreter'
+SITENAME = u'bpython'
 SITEURL = ''
 
 RELATIVE_URLS = True
