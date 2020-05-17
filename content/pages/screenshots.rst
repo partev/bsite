@@ -7,6 +7,13 @@ Screenshots
 Screenshots
 ===========
 
+.. image:: /images/full-demo.gif
+    :alt: full-demo gif
+.. image:: /images/class.gif
+    :alt: class gif
+.. image:: /images/math.gif
+    :alt: math gif
+
 .. image:: /images/1.png
     :alt: screenshot1
 .. image:: /images/2.png
@@ -19,15 +26,5 @@ Screenshots
     :alt: screenshot5
 .. image:: /images/6.png
     :alt: screenshot6
-.. image:: /images/7.png
-    :alt: screenshot6
-.. image:: /images/8.png
-    :alt: screenshot6
-.. image:: /images/full-demo.gif
-    :alt: full-demo gif
-.. image:: /images/class.gif
-    :alt: class gif
-.. image:: /images/math.gif
-    :alt: math gif
 
 .. _video: /videos/02.mp4
