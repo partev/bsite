@@ -19,7 +19,7 @@ Our good friends at Google have been kind enough to provide us with a `mailing l
 Twitter
 =======
 bpython has its own account: bpythonrepl_. You can follow Bob at bob_farrell_ or
-you can follow Simon at simondevlieger_.
+you can follow supakeen_.
 
 Email
 =====
@@ -49,4 +49,4 @@ Want to set up a Wiki for us? Email me to let me know where it is and the link w
 .. _mailing list: https://groups.google.com/forum/#!forum/bpython
 .. _bpythonrepl: http://twitter.com/bpythonrepl
 .. _bob_farrell: http://twitter.com/bob_farrell
-.. _simondevlieger: http://twitter.com/simondevlieger
+.. _supakeen: http://twitter.com/supakeen
