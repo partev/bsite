@@ -46,13 +46,17 @@ the release of squeeze. You can install it with:
 
 Fedora
 ------
-Terje Rosten has informed me that bpython is now in Fedora, so "yum install
-bpython" should be all you need.
+Terje Rosten has informed me that bpython is now in Fedora, you can install it via
+
+.. code-block:: shell
+
+  dnf install bpython
+
 
 Ubuntu
 ------
 The bpython package is included in the Ubuntu repositories starting at Ubuntu
-9.10 Karmic Koala.You can install it with:
+9.10 Karmic Koala. You can install it with:
 
 .. code-block:: shell
 
@@ -60,9 +64,15 @@ The bpython package is included in the Ubuntu repositories starting at Ubuntu
 
 OpenSUSE
 --------
-Packages for OpenSUSE can be found at
+openSUSE Tumbleweed users can install bpython from the official repositorios via
 
-https://software.opensuse.org/download.html?project=devel:languages:python&package=bpython
+.. code-block:: shell
+
+  zypper in python3-bpython
+
+Up to date packages for other openSUSE releases can be found at
+
+https://software.opensuse.org//download.html?project=devel%3Alanguages%3Apython&package=python-bpython
 
 Please follow the instructions there to install bpython with `zypper`.
 
