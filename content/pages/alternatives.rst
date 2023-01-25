@@ -14,6 +14,6 @@ If you know of any others please let us know. And if you're the author of any of
   * IDLE_
 
 .. _IPython: http://ipython.org
-.. _DreamPie: http://dreampie.sourceforge.net/
+.. _DreamPie: https://github.com/noamraph/dreampie
 .. _ptpython: https://github.com/jonathanslenders/ptpython
 .. _IDLE: https://docs.python.org/3/library/idle.html
