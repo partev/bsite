@@ -38,7 +38,7 @@ Bob's address).
 
 
 .. _here: https://github.com/bpython/bpython/issues
-.. _download: /downloads
+.. _download: /downloads.html
 .. _mailing list: https://groups.google.com/forum/#!forum/bpython
 .. _bpythonrepl: http://twitter.com/bpythonrepl
 .. _bob_farrell: http://twitter.com/bob_farrell
