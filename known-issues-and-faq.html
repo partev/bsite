@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Known issues and FAQ - bpython</title>
+
+    <link rel="stylesheet" href="./theme/css/main.css">
+    <link rel="stylesheet" href="./theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="./theme/images/favicon.png">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><a href="./"><img src="./theme/images/bpython.png" class="logo-img"/></a></div>
+        <div class="title"><a href="./">bpython </a></div>
+        <div class="sub-title"></div>
+<p>
+    <div class="view"><a href="./">Home</a></div>
+    <div class="view"><a href="./downloads.html">Downloads</a></div>
+    <div class="view"><a href="./screenshots.html">Screenshots</a></div>
+    <div class="view"><a href="./about.html">About</a></div>
+    <div class="view"><a href="./alternatives.html">Alternatives</a></div>
+    <div class="view"><a href="./community.html">Community</a></div>
+    <div class="view"><a href="./known-issues-and-faq.html">Known issues and FAQ</a></div>
+    <div class="view"><a href="./donate.html">Donate?</a></div>
+</p>
+
+<p>
+  <div class="view"><em><a href="http://docs.bpython-interpreter.org">documentation</a></em></div>
+<div class="view"><em><a href="http://bpaste.net">bpaste</a></em></div>
+</p>      </header>
+      <section>
+<section id="content" class="body">    
+    <h1 class="entry-title">Known issues and FAQ</h1>
+    
+    <p>For a list of unfixed issues, please check our <a class="reference external" href="https://github.com/bpython/bpython/issues">issue</a> tracker.</p>
+<div class="section" id="no-module-named-configparser">
+<h2>No module named <cite>configparser</cite></h2>
+<p>If launching <cite>bpython</cite> fails with</p>
+<div class="highlight"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;/usr/local/bin/bpython&quot;</span>, line <span class="m">7</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="kn">from</span> <span class="nn">bpython.curtsies</span> <span class="kn">import</span> <span class="n">main</span>
+  File <span class="nb">&quot;/Library/Python/2.7/site-packages/bpython/curtsies.py&quot;</span>, line <span class="m">14</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="kn">from</span> <span class="nn">bpython.curtsiesfrontend.repl</span> <span class="kn">import</span> <span class="n">Repl</span>
+  File <span class="nb">&quot;/Library/Python/2.7/site-packages/bpython/curtsiesfrontend/repl.py&quot;</span>, line <span class="m">32</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="kn">from</span> <span class="nn">bpython.config</span> <span class="kn">import</span> <span class="p">(</span><span class="n">Struct</span><span class="p">,</span> <span class="n">loadini</span><span class="p">,</span> <span class="n">default_config_path</span><span class="p">,</span>
+  File <span class="nb">&quot;/Library/Python/2.7/site-packages/bpython/config.py&quot;</span>, line <span class="m">9</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="kn">from</span> <span class="nn">six.moves.configparser</span> <span class="kn">import</span> <span class="n">ConfigParser</span>
+<span class="gr">ImportError</span>: <span class="n">No module named configparser</span>
+</pre></div>
+<p>there is an old <cite>six</cite> (pre 1.5) version in <cite>sys.path</cite> that gets loaded instead
+of the correct one. Make sure a new enough <cite>six</cite> version is placed in
+<cite>sys.path</cite>.</p>
+<p>This issue seems to be Mac OS X specific. In issue <a class="reference external" href="https://github.com/bpython/bpython/issues/494">494</a> it was mentioned that
+the following entry in <cite>~/.bashrc</cite> fixes the issue:</p>
+<div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">PYTHONPATH</span><span class="o">=</span>/Library/Python/2.7/site-packages/:<span class="nv">$PYTHONPATH</span>
+</pre></div>
+</div>
+<div class="section" id="upload-failed-hostname-bpaste-net-doesn-t-match-either-of-qabana-nl-qabana-nl">
+<h2>Upload failed: hostname 'bpaste.net' doesn't match either of '*.qabana.nl', 'qabana.nl'</h2>
+<p>This issues is caused by missing SNI support in Python respectively <cite>requests</cite>.
+There are two possible fixes for this issue:</p>
+<ul class="simple">
+<li>Upgrade to Python 2.7.7 or newer.</li>
+<li>Make sure that <cite>pyOpenSSL</cite>, <cite>pyasn1</cite>, and <cite>ndg-httpsclient</cite> are installed.</li>
+</ul>
+</div>
+<div class="section" id="pkg-resources-distributionnotfound-ndg-httpsclient">
+<h2>pkg_resources.DistributionNotFound: ndg-httpsclient</h2>
+<p>If launching <cite>bpython</cite> fails with</p>
+<div class="highlight"><pre><span></span><span class="gt">Traceback (most recent call last):</span>
+  File <span class="nb">&quot;/tmp/bpython-26/bin/bpython&quot;</span>, line <span class="m">5</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="kn">from</span> <span class="nn">pkg_resources</span> <span class="kn">import</span> <span class="n">load_entry_point</span>
+  File <span class="nb">&quot;/tmp/bpython-26/lib/python2.6/site-packages/pkg_resources.py&quot;</span>, line <span class="m">2829</span>, in <span class="n">&lt;module&gt;</span>
+<span class="w">    </span><span class="n">working_set</span> <span class="o">=</span> <span class="n">WorkingSet</span><span class="o">.</span><span class="n">_build_master</span><span class="p">()</span>
+  File <span class="nb">&quot;/tmp/bpython-26/lib/python2.6/site-packages/pkg_resources.py&quot;</span>, line <span class="m">449</span>, in <span class="n">_build_master</span>
+<span class="w">    </span><span class="n">ws</span><span class="o">.</span><span class="n">require</span><span class="p">(</span><span class="n">__requires__</span><span class="p">)</span>
+  File <span class="nb">&quot;/tmp/bpython-26/lib/python2.6/site-packages/pkg_resources.py&quot;</span>, line <span class="m">742</span>, in <span class="n">require</span>
+<span class="w">    </span><span class="n">needed</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">resolve</span><span class="p">(</span><span class="n">parse_requirements</span><span class="p">(</span><span class="n">requirements</span><span class="p">))</span>
+  File <span class="nb">&quot;/tmp/bpython-26/lib/python2.6/site-packages/pkg_resources.py&quot;</span>, line <span class="m">639</span>, in <span class="n">resolve</span>
+<span class="w">    </span><span class="k">raise</span> <span class="n">DistributionNotFound</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+<span class="gr">pkg_resources.DistributionNotFound</span>: <span class="n">ndg-httpsclient</span>
+</pre></div>
+<p>after a successful install, something went wrong during the installation of the
+dependencies (i.e. they were not correctly resolved). Installing the
+<cite>pyOpenSSL</cite>, <cite>pyasn1</cite> and <cite>ndg-httpsclient</cite> manually should resolve this issue.</p>
+<p>This issue has been observed with old Python (2.6.X) and pip versions and it
+should not be present in newer versions.</p>
+</div>
+<div class="section" id="building-cffi-fails-to-build-on-mac-os-x">
+<h2>Building <cite>cffi</cite> fails to build on Mac OS X</h2>
+<p>If you have problems installing <cite>cffi</cite> which is needed by <cite>pyOpenSSL</cite>,
+please take a look at <cite>cffi</cite>'s <a class="reference external" href="https://cffi.readthedocs.org/en/release-0.8/#macos-x">documentation</a>.</p>
+</div>
+<div class="section" id="f1-does-not-work-in-gnome-terminal">
+<h2>&lt;F1&gt; does not work in GNOME terminal</h2>
+<p>By default GNOME terminal does not forward &lt;F1&gt; to the application. This can be
+fixed by removing the &lt;F1&gt; key binding in GNOME terminal.</p>
+</div>
+
+</section>
+      </section>
+      <footer>
+        <p><small>&copy; bpython &mdash; Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+  </body>
+</html>

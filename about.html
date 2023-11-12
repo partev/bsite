@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>About - bpython</title>
+
+    <link rel="stylesheet" href="./theme/css/main.css">
+    <link rel="stylesheet" href="./theme/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="shortcut icon" href="./theme/images/favicon.png">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div><a href="./"><img src="./theme/images/bpython.png" class="logo-img"/></a></div>
+        <div class="title"><a href="./">bpython </a></div>
+        <div class="sub-title"></div>
+<p>
+    <div class="view"><a href="./">Home</a></div>
+    <div class="view"><a href="./downloads.html">Downloads</a></div>
+    <div class="view"><a href="./screenshots.html">Screenshots</a></div>
+    <div class="view"><a href="./about.html">About</a></div>
+    <div class="view"><a href="./alternatives.html">Alternatives</a></div>
+    <div class="view"><a href="./community.html">Community</a></div>
+    <div class="view"><a href="./known-issues-and-faq.html">Known issues and FAQ</a></div>
+    <div class="view"><a href="./donate.html">Donate?</a></div>
+</p>
+
+<p>
+  <div class="view"><em><a href="http://docs.bpython-interpreter.org">documentation</a></em></div>
+<div class="view"><em><a href="http://bpaste.net">bpaste</a></em></div>
+</p>      </header>
+      <section>
+<section id="content" class="body">    
+    <h1 class="entry-title">About</h1>
+    
+    <div class="section" id="introduction">
+<h2>Introduction</h2>
+<p>A few people asked for stuff like syntax highlighting and autocomplete for the Python interactive interpreter. IPython seems to offer this (plus you can get readline behaviour in the vanilla interpreter) but I tried IPython a couple of times. Perhaps I didn't really get it, but I get the feeling that the ideas behind IPython are pretty different to bpython. I didn't want to create a whole development environment; I simply wanted to provide a couple of neat features that already exist and turn them into something a little more interactive.</p>
+<p>The idea is to provide the user with all the features in-line, much like modern IDEs, but in a simple, lightweight package that can be run in a terminal window, so curses seemed like the best choice. Sorry if you use Windows.</p>
+<p>bpython doesn't attempt to create anything new or groundbreaking, it simply brings together a few neat ideas and focuses on practicality and usefulness. For this reason, the &quot;Rewind&quot; function should be taken with a pinch of salt, but personally I have found it to be very useful. I use bpython now whenever I would normally use the vanilla interpreter, e.g. for testing out solutions to people's problems on IRC, quickly testing a method of doing something without creating a temporary file, etc..</p>
+<p>I hope you find it useful and please feel free to submit any bugs/patches (yeah right)/suggestions to the <a class="reference external" href="/community.html">mailing list</a>. Money is also accepted.</p>
+</div>
+<div class="section" id="features">
+<h2>Features</h2>
+<div class="section" id="in-line-syntax-highlighting">
+<h3>In-line syntax highlighting.</h3>
+<p>This uses Pygments for lexing the code as you type, and colours appropriately. Pygments does a great job of doing all of the tricky stuff and really leaving me with very little to do except format the tokens in all my favourite colours.</p>
+</div>
+<div class="section" id="readline-like-autocomplete-with-suggestions-displayed-as-you-type">
+<h3>Readline-like autocomplete with suggestions displayed as you type.</h3>
+<p>Thanks to Python's readline interface to libreadline and a ready-made class for using a Python interpreter's scope as the dataset, the only work here was displaying the readline matches as you type in a separate curses window below/above the cursor.</p>
+</div>
+<div class="section" id="expected-parameter-list">
+<h3>Expected parameter list.</h3>
+<p>As in a lot of modern IDEs, bpython will attempt to display a list of parameters for any function you call. The inspect module is tried first, which works with any Python function, and then pydoc if that fails, which seems to be pretty adequate, but obviously in some cases it's simply not possible. I used pyparsing to cure my nested parentheses woes; again, it was nice and easy.</p>
+</div>
+<div class="section" id="rewind">
+<h3>Rewind.</h3>
+<p>I didn't call this &quot;Undo&quot; because I thought that would be misleading, but &quot;Rewind&quot; is probably as bad. The idea is that the code entered is kept in memory and when the Rewind function is called, the last line is popped and the entire code is re-evaluated. As you can imagine, this has a lot of potential problems, but for defining classes and functions, I've found it to be nothing but useful.</p>
+</div>
+<div class="section" id="pastebin-code-write-to-file">
+<h3>Pastebin code/write to file.</h3>
+<p>I don't really use the save thing much, but the pastebin thing's great. Hit a key and what you see on the screen will be sent to a pastebin and a URL is returned for you to do what you like with. bpaste.net is used by default, but you can configure bpython to use a different pastebin.</p>
+</div>
+<div class="section" id="flush-curses-screen-to-stdout">
+<h3>Flush curses screen to stdout.</h3>
+<p>A featurette, perhaps, but I thought it was worth noting. I can't personally recall a curses app that does this, perhaps it's often not useful, but when you quit bpython, the screen data will be flushed to stdout, so it basically looks the same as if you had quit the vanilla interpreter.</p>
+</div>
+<div class="section" id="python-3-support">
+<h3>Python 3 support</h3>
+<p>bpython supports Python 3. It's as simple as running setup.py with Python 3.</p>
+</div>
+<div class="section" id="configuration">
+<h3>Configuration</h3>
+<p>See the sample-config file for a list of available options. You should save your
+ini file as <tt class="docutils literal">$XDG_CONFIG_HOME/bpython/config</tt> <a class="footnote-reference" href="#f1" id="footnote-reference-1">[1]</a> or specify at the command
+line:</p>
+<div class="highlight"><pre><span></span>bpython<span class="w"> </span>--config<span class="o">=</span>/path/to/a/bpython/config/file
+</pre></div>
+</div>
+<div class="section" id="artwork">
+<h3>Artwork</h3>
+<p>Our logo and colors have been masterfully created by Leo Hutson.</p>
+<!-- :: Footnotes -->
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#footnote-reference-1">[1]</a></td><td><tt class="docutils literal">$XDG_CONFIG_HOME</tt> defaults to <tt class="docutils literal"><span class="pre">~/.config</span></tt> if not set.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+</section>
+      </section>
+      <footer>
+        <p><small>&copy; bpython &mdash; Theme based on Sundown by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,3 @@
+[submodule "bsite-theme"]
+	path = bsite-theme
+	url = https://github.com/bpython/bsite-theme
